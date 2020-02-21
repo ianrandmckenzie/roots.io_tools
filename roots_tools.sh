@@ -1,5 +1,6 @@
 # $1 = website domain name
 # $2 = theme name
+# $3 = command to open text editor, e.g. `vim` or `code`
 rootswp_build(){
   echo "Building a fresh WordPress repo..."
   cd ~/workspace-wordpress
@@ -9,7 +10,7 @@ rootswp_build(){
   git init
   git add .
   git commit -m "Initial commit"
-  s trellis/group_vars/development
+  $3 trellis/group_vars/development
   echo "Done. Next step: configure wordpress_sites.yml and vault.yml"
   echo "Enter 'done' once you're finished configuring"
   
