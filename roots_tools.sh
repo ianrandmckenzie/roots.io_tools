@@ -1,6 +1,6 @@
 # $1 = website domain name
-# $2 = theme name
-# $3 = command to open text editor, e.g. `vim` or `code`
+# $2 = command to open text editor, e.g. `vim` or `code`
+# $3 = theme name
 rootswp_build(){
   echo "Building a fresh WordPress repo..."
   cd ~/workspace-wordpress
